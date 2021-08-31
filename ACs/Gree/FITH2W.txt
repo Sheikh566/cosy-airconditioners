@@ -1,0 +1,45 @@
+
+Key Features
+3D Air Flow
+1st European Compliant Heat and Cool AC
+Latest Powerful Generation-10 Inverters
+Energy Efficient Class A+ (Up to 60% Electricity Saving)
+Low Voltage Startup – 150V
+Ultra Low Frequency Torque Control
+State-of-the-art High Speed DSP Chip
+Precise Temperature Control
+Faster Cooling And Heating
+Big Indoor (1 Meter)
+Curved Elegant Design
+Hidden Led Display
+Fire Proof PCB
+Intellegent Defrost
+I-Feel
+Ceiling Cooling and Floor Heating System
+Specifications
+BTU Capacity
+12000 BTU
+Compressor W
+3500
+Low Voltage Startup
+150V
+Eco Friendly Refrigerant
+R410A
+Energy Efficient Class A+
+60% Electricity saving
+BTU/H Capacity (H/S/L*)
+13512/11942/2047
+Output Capacity (W) (H/S/L*)
+3960/3500/600
+Power Input (W)(H/S/L*)
+1550/1060/220
+Energy Efficiency Ratio (EER)
+3.7
+BTU/H Capacity (H/S/L*)
+17504/12522/2047
+Output Capacity (W) (H/S/L*)
+5130/3670/600
+Power Input (W)(H/S/L*)
+1650/989/220
+Energy Efficiency Ratio (EER)
+3.7

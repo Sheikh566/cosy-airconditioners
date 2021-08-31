@@ -1,0 +1,45 @@
+FEATURES
+Elegant 2 Tone Black/Gray Textured Finish
+1st European Compliant Heat and Cool AC
+Latest Powerful G-10 Inverter
+Ultra Low Frequency Torque Control
+State of the Art High Speed DSP Chip
+Precise Tempreture Control
+Faster Cooling And Heating
+Wide Frequency Precise Control
+Ultra Low Noise Control
+Ceiling Cooling and Floor Heating System
+Integrated Design
+Dual Installation (Both sides option)
+Auto Restart
+Fire Proof Electric Box
+High Temperature Resistence PCB
+Turbo Cooling
+4 Way Air Outlet
+3 Sleep Curves
+Double Layer Condenser
+Specifications
+BTU Capacity
+12000 BTU
+Compressor W
+3517
+Low Voltage Startup
+150V
+Eco Friendly Refrigerant
+R410A
+Energy Efficient Class A+
+60% Electricity saving
+Auto Voltage Adaptation
+150V-260V
+BTU/H Capacity (Cooling)
+12970
+Output Capacity (Cooling)
+3800
+Power Input (W) (Cooling)
+1560
+BTU/H Capacity (Heating)
+14660
+Output Capacity (Heating)
+4740
+Power Input (W) (Heating)
+1420

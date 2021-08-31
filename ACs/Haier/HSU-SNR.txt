@@ -1,0 +1,28 @@
+Cooling Capacity(BTU)
+12000
+12000
+Heating Capacity(BTU)
+12000
+12000
+Power Input(W)-Cooling
+320-1160
+320-1440
+Power Input(W)-Heating
+320-1151
+320-1440
+Running Current(A)-Cooling
+1.0-5.2
+1.45-6.50
+Running Current(A)-Heating
+1.0-5.2
+1.45-6.50
+Power Supply (Ph/V/Hz)
+1/220/50
+1/220/50
+Indoor Dimension(mm)
+866/196/301 (W/D/H)
+853/205/270 (W/D/H)
+Outdoor Dimension(mm)
+780/245/540 (W/D/H)
+780/245/530 (W/D/H)
+3.5

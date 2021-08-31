@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="../images/cosy-short-logo.png" type="image/png">
+
+  <!-- CSS CDNs -->
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- JS CDNs -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+  <title>COSY Air Conditioners</title>
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <nav class="navbar navbar-expand-md fixed-top ">
+    <div class="container-fluid con1">
+      <!-- Navbar Logo -->
+      <a class="navbar-brand" href="../index.html" style="margin: -10px 70px;">
+        <img class="nav-logo" src="../images/cosy-logo-nav-white.png" type="image/png" height="55" alt="nav-logo" />
+      </a>
+      <!-- Toggler  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Animated Menu Icon  -->
+        <div class="container bar" onclick="menu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- HOME tab -->
+          <li class="nav-item">
+            <a class="nav-link home" aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <!-- BRANDS tab -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color: white;">
+              BRANDS
+            </a>
+            <!-- Dropdown items -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Haier</a></li>
+              <li><a class="dropdown-item" href="#">Kenwood</a></li>
+              <li><a class="dropdown-item" href="#">Gree</a></li>
+              <li><a class="dropdown-item" href="#">Orient</a></li>
+              <li><a class="dropdown-item" href="#">Dawlance</a></li>
+            </ul>
+          </li>
+          <!-- CONTACT US tab -->
+          <li class="nav-item">
+            <a class="nav-link" href="../Contact us/contact us.html" style="color: white;">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+
+  <!-- Tools -->
+  <section class="sidenav1">
+    <h3>Filter Brands</h3>
+    <a href="#" class="filter-list" id="abc" data-filter="haier">Haier</a>
+    <a href="#" class="filter-list" data-filter="kenwood">Kenwood</a>
+    <a href="#" class="filter-list" data-filter="gree">Gree</a>
+    <a href="#" class="filter-list" data-filter="orient">Orient</a>
+    <a href="#" class="filter-list" data-filter="dawlance">Dawlance</a>
+    <div class="filter-list active show-all" data-filter="show-all">
+      <button class="btn btn-light">SHOW ALL</button>
+    </div>
+  </section>
+
+  <section class="sidenav2">
+    <div class="active show-all">
+      <h5>Select Any 2 Items</h5>
+      <button class="btn btn-light" disabled>COMPARE</button>
+    </div>
+  </section>
+
+
+  <!-- Products Container -->
+  <section class="main">
+    <div class="item-1 item haier" id="item-1">
+      <div class="img"><img src="../ACs/Haier/HSU-HFA.png" height="210" style="margin-top: 50px" alt=""></div>
+      <img class="item-logo" src="../ACs/Haier/haier.png" height="18" alt="">
+      <div class="details">
+        <h2>Haier HSU-HFA</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>One Touch Clean</li>
+          <li><span class="bullet bl-2"></span>Easy Installation</li>
+          <li><span class="bullet bl-3"></span>UPS Inverter</li>
+          <li><span class="bullet bl-4"></span>Elegant Design</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 69,950/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-2 item haier">
+      <div class="img"><img src="../ACs/Haier/HSU-HFAA.png" height="170" alt=""></div>
+      <img class="item-logo" src="../ACs/Haier/haier.png" height="18" alt="">
+      <div class="details">
+        <h2>Haier HSU-HFAA</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Turbo Mode</li>
+          <li><span class="bullet bl-2"></span>Voltage Stablizer</li>
+          <li><span class="bullet bl-3"></span>UPS Inverter</li>
+          <li><span class="bullet bl-4"></span>Energy Saving</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 89,950/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-3 item haier">
+      <div class="img"><img src="../ACs/Haier/HSU-SNH.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Haier/haier.png" height="18" alt="">
+      <div class="details">
+        <h2>Haier HSU-SNH</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>One Touch Clean</li>
+          <li><span class="bullet bl-2"></span>Sleep Mode</li>
+          <li><span class="bullet bl-3"></span>UPS Inverter</li>
+          <li><span class="bullet bl-4"></span>Energy Saving</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 81,800/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-4 item haier">
+      <div class="img"><img src="../ACs/Haier/HSU-SNR.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Haier/haier.png" height="18" alt="">
+      <div class="details">
+        <h2>Haier HSU-SNR</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Healthy Air Flow</li>
+          <li><span class="bullet bl-2"></span>Voltage Stablizer</li>
+          <li><span class="bullet bl-3"></span>Turbo Cooling</li>
+          <li><span class="bullet bl-4"></span>Energy Saving</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 81,800/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-5 item haier">
+      <div class="img"><img src="../ACs/Haier/HSU-SNS.jpg" height="160" alt=></div>
+      <img class="item-logo" src="../ACs/Haier/haier.png" height="18" alt="">
+      <div class="details">
+        <h2>Haier HSU-SNS</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>4-Way Air Flow</li>
+          <li><span class="bullet bl-2"></span>Sleep Mode</li>
+          <li><span class="bullet bl-3"></span>UPS Inverter</li>
+          <li><span class="bullet bl-4"></span>Energy Saving</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 58,900/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-6 item kenwood">
+      <div class="img"><img src="../ACs/Kenwood/eEco.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Kenwood/kenwood.png" height="18" alt="">
+      <div class="details">
+        <h2>Kenwood eEco</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Upto 75% Energy Efficient</li>
+          <li><span class="bullet bl-2"></span>Turbo Operation</li>
+          <li><span class="bullet bl-3"></span>DC Inverter</li>
+          <li><span class="bullet bl-4"></span>Heat & Cool Function</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 109,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-7 item kenwood">
+      <div class="img"><img src="../ACs/Kenwood/eOptima.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Kenwood/kenwood.png" height="18" alt="">
+      <div class="details">
+        <h2>Kenwood eOptima</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Upto 60% Energy Efficient</li>
+          <li><span class="bullet bl-2"></span>DC Inverter</li>
+          <li><span class="bullet bl-3"></span>Auto Clean Function</li>
+          <li><span class="bullet bl-4"></span>Turbo Operation</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 70,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-8 item kenwood">
+      <div class="img"><img src="../ACs/Kenwood/ePrime.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Kenwood/kenwood.png" height="18" alt="">
+      <div class="details">
+        <h2>Kenwood ePrime</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>I-Feel Function</li>
+          <li><span class="bullet bl-2"></span>Auto Clean</li>
+          <li><span class="bullet bl-3"></span>4D Air Flow</li>
+          <li><span class="bullet bl-4"></span>100% Copper Pipe</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 56,500/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-9 item kenwood">
+      <div class="img"><img src="../ACs/Kenwood/eSleek.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Kenwood/kenwood.png" height="18" alt="">
+      <div class="details">
+        <h2>Kenwood eSleek</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Anti-Fungus Function</li>
+          <li><span class="bullet bl-2"></span>R410a Gas</li>
+          <li><span class="bullet bl-3"></span>Heat & Cool Function</li>
+          <li><span class="bullet bl-4"></span>4D Air Flow</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 55,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-10 item gree">
+      <div class="img"><img src="../ACs/Gree/FITH2W.jpg" height="220" alt=""></div>
+      <img class="item-logo" src="../ACs/Gree/gree.png" height="18" alt="">
+      <div class="details">
+        <h2>Gree FITH2W</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>3D Air Flow</li>
+          <li><span class="bullet bl-2"></span>Big Indoor</li>
+          <li><span class="bullet bl-3"></span>Intelligent Defrost</li>
+          <li><span class="bullet bl-4"></span>I-Feel</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 118,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-11 item gree">
+      <div class="img"><img src="../ACs/Gree/FITH5WB.jpg" height="220" alt=""></div>
+      <img class="item-logo" src="../ACs/Gree/gree.png" height="18" alt="">
+      <div class="details">
+        <h2>Gree FITH5WB</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Hidden LED Display</li>
+          <li><span class="bullet bl-2"></span>Curved Design</li>
+          <li><span class="bullet bl-3"></span>Low Voltage Startup</li>
+          <li><span class="bullet bl-4"></span>4 Way Air Outlet</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 81,900/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-12 item gree">
+      <div class="img"><img src="../ACs/Gree/G10-Inv-2G.jpg" height="220" alt=""></div>
+      <img class="item-logo" src="../ACs/Gree/gree.png" height="18" alt="">
+      <div class="details">
+        <h2>Gree G10-Inv-2G</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Latest G10 Inverter</li>
+          <li><span class="bullet bl-2"></span>4 Way Air Outlet</li>
+          <li><span class="bullet bl-3"></span>Auto Restart</li>
+          <li><span class="bullet bl-4"></span>Integrated Design</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 63,900/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-13 item gree">
+      <div class="img"><img src="../ACs/Gree/GS-AITH11S.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Gree/gree.png" height="18" alt="">
+      <div class="details">
+        <h2>Gree GS-AITH11S</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Wifi Control</li>
+          <li><span class="bullet bl-2"></span>Eco Friendly</li>
+          <li><span class="bullet bl-3"></span>Auto Restart</li>
+          <li><span class="bullet bl-4"></span>Faster</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 75,900/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-14 item orient">
+      <div class="img"><img src="../ACs/Orient/Orient-Titan.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Orient/orient.png" height="18" alt="">
+      <div class="details">
+        <h2>Orient Titan</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Wifi Control</li>
+          <li><span class="bullet bl-2"></span>Eco Friendly</li>
+          <li><span class="bullet bl-3"></span>Auto Restart</li>
+          <li><span class="bullet bl-4"></span>Faster Cooling</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 66,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-15 item orient">
+      <div class="img"><img src="../ACs/Orient/Ultron-Classic-Smart.jpg" height="220" style="margin-top: 0px"></div>
+      <img class="item-logo" src="../ACs/Orient/orient.png" height="18" alt="">
+      <div class="details">
+        <h2>Orient Ultron Smart</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Wifi-Kit</li>
+          <li><span class="bullet bl-2"></span>Energy Meter</li>
+          <li><span class="bullet bl-3"></span>Japanese PCB</li>
+          <li><span class="bullet bl-4"></span>Gold Fin - No Rust</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 89,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-16 item orient">
+      <div class="img"><img src="../ACs/Orient/Ultron-Hyper.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Orient/orient.png" height="18" alt="">
+      <div class="details">
+        <h2>Orient Hyper</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>For All Weather</li>
+          <li><span class="bullet bl-2"></span>60% Energy Saving</li>
+          <li><span class="bullet bl-3"></span>Low Voltage Operation</li>
+          <li><span class="bullet bl-4"></span>Energy Meter</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 75,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-17 item orient">
+      <div class="img"><img src="../ACs/Orient/Ultron-Royal.png" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Orient/orient.png" height="18" alt="">
+      <div class="details">
+        <h2>Orient Royal</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Google Assistance</li>
+          <li><span class="bullet bl-2"></span>4D Air Flow</li>
+          <li><span class="bullet bl-3"></span>R410 Refrigerant</li>
+          <li><span class="bullet bl-4"></span>70% Energy Saving</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 55,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-18 item dawlance">
+      <div class="img"><img src="../ACs/Dawlence/Aura-Inverter.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Dawlence/dawlance.png" height="18" alt="">
+      <div class="details">
+        <h2>Dawlance Aura</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>100% Copper Pipes</li>
+          <li><span class="bullet bl-2"></span>Anti-F Feature</li>
+          <li><span class="bullet bl-3"></span>Typhoon Air Technology</li>
+          <li><span class="bullet bl-4"></span>Large Air Throw</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 73,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-19 item dawlance">
+      <div class="img"><img src="../ACs/Dawlence/Cruise-Pro-Inverter.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Dawlence/dawlance.png" height="18" alt="">
+      <div class="details">
+        <h2>Dawlance Cruise Pro</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Energy Efficient</li>
+          <li><span class="bullet bl-2"></span>Corrosion & Rust Free</li>
+          <li><span class="bullet bl-3"></span>Heat & Cool Function</li>
+          <li><span class="bullet bl-4"></span>Large Air Throw</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 57,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-20 item dawlance">
+      <div class="img"><img src="../ACs/Dawlence/Enercon-Inverter.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Dawlence/dawlance.png" height="18" alt="">
+      <div class="details">
+        <h2>Dawlance Enercon</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Elegant Glass Design</li>
+          <li><span class="bullet bl-2"></span>Wide Voltage Range</li>
+          <li><span class="bullet bl-3"></span>Heat & Cool Function</li>
+          <li><span class="bullet bl-4"></span>Energy Efficient</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 84,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+
+    <div class="item-21 item dawlance">
+      <div class="img"><img src="../ACs/Dawlence/Powercon-Inverter.jpg" height="160" alt=""></div>
+      <img class="item-logo" src="../ACs/Dawlence/dawlance.png" height="18" alt="">
+      <div class="details">
+        <h2>Dawlance Powercon</h2>
+        <h4>Key Features:</h4>
+        <ul>
+          <li><span class="bullet bl-1"></span>Fire Proof Control Box</li>
+          <li><span class="bullet bl-2"></span>Heat & Cool Function</li>
+          <li><span class="bullet bl-3"></span>Faster Cooling</li>
+          <li><span class="bullet bl-4"></span>Leakage Detection</li>
+        </ul>
+      </div>
+      <img class="zigzag" src="../images/section-change.png" width="394" alt="">
+      <div class="price"><span class="price-label">Price: </span>Rs 69,000/-</div>
+      <span class="cb"><input type="checkbox" name="select" class="form-check-input">&nbsp;COMPARE</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2021 SA · All Rights Reserved</p>
+  </footer>
+</body>
+
+<!-- Custom Script  -->
+<script>
+  // class toggler to change Hamburger menu shape.
+  function menu(x) {
+    x.classList.toggle("change");
+  }
+
+  $(document).ready(function () {
+    //_____________________ CODE FOR FILTERING PRODUCTS BY BRAND _______________________
+    $('.filter-list').click(function () {
+      const value = $(this).attr('data-filter');
+
+      // if "Show All" Button is active. It shows all products
+      if (value == 'show-all') {
+        $('.item').show('1000');
+      }
+      // if particular brand's button is active. 
+      // if hides other product and show only those brand's product
+      else {
+        $('.item').not('.' + value).hide('1000');
+        $('.item').filter('.' + value).show('1000');
+      }
+
+      // Adds and remove "active" class in button on click 
+      $('.filter-list').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+    })
+
+    // ____________ CODE FOR FILTERING PRODUCTS THROUGH NAV LINKS _____________________
+    var brand;
+    function filter(x){
+      // loops through each filter-list and if a list item's text match with "brand"
+      // then it triggers a click event on that item 
+      $('.filter-list').each(function () {
+        if ($(this).text() === x) {
+          $(this).click();
+          // adds "active" class to apply styling to active filter-list item
+          $(this).addClass('active').siblings().removeClass('active');
+        }
+      });
+    }
+
+    // checks if "brand" item exist in session storage
+    if (sessionStorage.getItem("brand") !== null) {
+      brand = sessionStorage.getItem("brand");
+      filter(brand);
+    }  
+      
+    $(".dropdown-item").click(function() {
+        brand = $(this).text();
+        filter(brand);
+      });
+      
+    
+    
+
+    //________________________ CODE FOR COMPARING FEATURE ______________________________
+    // variable to count no. of checkbox checked 
+    var checkboxCheckedCount = 0;
+    var title;
+    // Unchecks All Compare checkboxes on page load
+    $(".form-check-input").prop('checked', false);
+
+    $(".form-check-input").click(function () {
+      //gets title of product on check event and add a "selected" class
+      if (this.checked === true) {
+        checkboxCheckedCount++;
+        $(this).parent().addClass('selected')
+        title = $(this).parent().siblings('.details').children('h2').text();
+
+      }
+      // removes "selected" class on uncheck event
+      if (this.checked === false) {
+        $(this).parent().removeClass('selected');
+        checkboxCheckedCount--;
+      }
+      // if more than 1 checkboxes are checked
+      if (checkboxCheckedCount > 1) {
+        // saves title of second product in local storage
+        localStorage.setItem("title2", title);
+        // enables compare button on side panel
+        $('.sidenav2 .btn').prop('disabled', false);
+        // disable all checkboxes except which has "selected" class and reduces opacity 
+        // to show unavailability
+        $('.cb').not('.selected input').prop('disabled', true);
+        $('.cb').not('.selected').css('opacity', '0.2');
+      }
+      else {
+        // saves title of first product in local storage 
+        localStorage.setItem("title1", title);
+        // disables compare button
+        $('.sidenav2 .btn').prop('disabled', true);
+        // enables all checkboxes and increase opacity to show availability
+        $('.cb').prop('disabled', false)
+        $('.cb').not('.selected').css('opacity', '1');
+      }
+
+    })
+    // redirect to comparison table page on click event of compare button
+    $('.sidenav2 .btn').click(function () {
+      window.location.href = "comparison/index.html";
+    });
+  })
+</script>
+</html>

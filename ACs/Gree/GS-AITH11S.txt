@@ -1,0 +1,38 @@
+Key Features
+Latest Powerful G-10 Inverter
+Energy Efficient Class A+ (Up to 60% Electricity Saving)
+Wifi Control
+Ultra High/Low Frequency Torque Control, Wide Frequency Precise Control
+State of the Art High Speed DSP Chip
+Precise Temperature Control
+Faster Cooling and Heating
+Eco Friendly Refrigerant R410A
+Power Factor Correction 99%
+Ultra Low Noise Control
+Computer Simulation Control
+Auto Voltage Adaptation (150-260 V)
+4 Way Air Flow, 3 Sleep Curves
+Fire Proof Electric Box
+Low Voltage Startup – 150V
+Self-Diagnosis
+Double Layer Condenser
+
+Specifications
+Title
+GS-12AITH11S
+Capacity
+12000 BTU
+BTU/H Cooliing Capacity
+(H/S/L): 12970/12000/4172
+Cooling Output Capacity (W)
+(H/S/L): 3800/3500/1220
+Cooling Power Input (W)
+(H/S/L): 1560/1060/295
+EER
+3.74
+BTU/H Heating Capacity
+(H/S/L): 14660/13650/4480
+Heating Cooling Output Capacity (W)
+(H/S/L): 4740/4000/1310
+Heating Power Input (W)
+(H/S/L): 1420/1100/330

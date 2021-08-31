@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="images/cosy-short-logo.png" type="image/png">
+
+  <!-- CSS CDNs -->
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- JS CDNs -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+  <title>COSY Air Conditioners</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top bg-transparent">
+    <div class="container-fluid con1">
+      <!-- Navbar Logo -->
+      <a class="navbar-brand" href="index.html" style="margin: -10px 70px;">
+        <img class="nav-logo" src="images/cosy-logo-nav-white.png" height="55" alt="" />
+      </a>
+      <!-- Toggler  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Animated Menu Icon  -->
+        <div class="container bar" onclick="menu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- HOME tab -->
+          <li class="nav-item">
+            <a class="nav-link home" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <!-- BRANDS tab -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color: white;">
+              BRANDS
+            </a>
+            <!-- Dropdown items -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Haier</a></li>
+              <li><a class="dropdown-item" href="#">Kenwood</a></li>
+              <li><a class="dropdown-item" href="#">Gree</a></li>
+              <li><a class="dropdown-item" href="#">Orient</a></li>
+              <li><a class="dropdown-item" href="#">Dawlance</a></li>
+            </ul>
+          </li>
+          <!-- CONTACT US tab -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us/contact us.html" style="color: white;">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <section class="container-fluid">
+    <!-- First Section - Grid  -->
+    <div class="row front">
+      <!-- Large Logo with tag line -->
+      <div class="col-xl-6">
+        <img id="front-logo" src="images/discover.png" alt="">
+      </div>
+      <!-- Fading ACs -->
+      <div class="col-xl-6">
+        <img id="front-img" src="#" alt="">
+      </div>
+    </div>
+    <img src="images/section-change.png" alt="">
+  </section>
+  <!-- Second Section - See All Products button  -->
+  <section id="see-all">
+    <a href="Products/index.html">
+      <button id="see-all-btn" href="Products/index.html">See All Products</button>  
+    </a>
+    <img src="images/section-change-inverted.png" style="position: relative; top: 360px" alt="">
+  </section>
+  
+
+  <section id="third" class="container-fluid">
+    <p id="ourbrands">Our Brands</p>
+    <div class="d-wrapper">
+      <div class="diamond d1"><img src="ACs/Haier/haier.png" height="70" alt=""></div>  
+      <div class="diamond d2"><img src="ACs/Kenwood/kenwood-light.svg" height="45" alt=""></div>  
+      <div class="diamond d3"><img src="ACs/Gree/gree.png" height="70" alt=""></div>  
+      <div class="diamond d4"><img src="ACs/Orient/orient.png" height="60" alt=""></div>  
+      <div class="diamond d5"><img src="ACs/Dawlence/dawlance-light.svg" height="46" alt=""></div> 
+       <!-- separates footer  -->
+      <div class="footer-line"></div> 
+    </div>
+  </section>
+  <footer>
+    <p>© 2021 SA · All Rights Reserved</p>
+  </footer>
+
+
+  <!-- Custom Script -->
+  <script>
+    function menu(x) {
+      x.classList.toggle("change");
+
+      // Collects all the section elements
+      var background = document.getElementsByTagName('section');
+      
+      // 1st Method: With "forEach" loop
+
+      Array.from(background).forEach(element => {
+        //toggles blur class to add blur on each sections
+        element.classList.toggle("blur")
+      });
+
+      // 2nd Method (Alternate):  With simple "for" loop
+
+      // for (var i = 0; i < background.length; i++) {
+      //   background[i].classList.toggle("blur");
+      // }
+    }
+
+    $(document).ready(function () {
+      // _____________________ NAVBAR LOOK ENHANCEMENT ____________________
+      $(window).on("scroll", function () {
+        // Takes Scroll value on a scroll event
+        var sc = $(window).scrollTop();
+
+        // Shows bottom border of nav after certain scroll 
+        if (sc > 50) {
+          $(".con1").addClass("conw");
+        }
+        else {
+          $(".con1").removeClass("conw");
+        }
+
+        // Inverts navbar item color after certain scroll to make contrast from background 
+        if (sc > 1000 && sc < 1450) {
+          $(".nav-link").css({ "color": "black", "font-weight": "bold" });
+          $(".nav-logo").css("filter", "invert(1)");
+          $(".con1").addClass("conb");
+          $(".bar>*").css("background-color", "black")
+        }
+        else {
+          $(".nav-link").css({ "color": "white", "font-weight": "normal" });
+          $(".nav-logo").css("filter", "invert(0)");
+          $(".con1").removeClass("conb");
+          $(".bar>*").css("background-color", "rgb(230, 230, 230)")
+        }
+        
+        // diamonds pop up scroll 
+        if (sc > 1400 && sc < 1700) {
+          $(".d1").addClass('d d1b');
+        }
+        else {
+          $(".d1").removeClass('d d1b');
+        }
+        if (sc > 1650 && sc < 1950) {
+          $(".d2").addClass('d d2b');
+        }
+        else {
+          $(".d2").removeClass('d d2b');
+        }
+        if (sc > 1950 && sc < 2250) {
+          $(".d3").addClass('d d3b');
+        }
+        else {
+          $(".d3").removeClass('d d3b');
+        }
+        if (sc > 2250 && sc < 2550) {
+          $(".d4").addClass('d d4b');
+        }
+        else {
+          $(".d4").removeClass('d d4b ');
+        }
+        if (sc > 2550) {
+          $(".d5").addClass('d d5b');
+        }
+        else {
+          $(".d5").removeClass('d d5b');
+        }
+      });
+
+      // saves text of dropdown item on click and redirect to products page
+      $('.dropdown-item').click(function (){
+        sessionStorage.setItem("brand", $(this).text());
+        window.location.href = "Products/index.html";
+      })
+
+      // unset "brand" in session storage when user go through "See All Product" button
+      // to avoid filtering.
+      $('#see-all-btn').click(function (){
+        sessionStorage.removeItem("brand");
+      })
+    });
+  </script>
+</html>

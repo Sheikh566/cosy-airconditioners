@@ -1,0 +1,348 @@
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    * {
+      -webkit-user-drag: none;
+    }
+  
+    .nav-link {
+      font-size: 1.1em;
+      margin-right: 1.5em;
+      font-family: "Poiret One";
+      letter-spacing: 3px;
+      color: white;
+    }
+    .nav-link:hover {
+      color: white;
+      border-bottom: 2px solid white;
+    }
+    .dropdown-menu {
+      background-color: white;
+    }
+
+    .conw:before {
+        content: "";
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+        height: 15px;
+        width: 95%;
+        border-bottom: 2px solid white;
+    }
+    .conb:before {
+        content: "";
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+        height: 15px;
+        width: 95%;
+        border-bottom: 2px solid rgb(0, 0, 0);
+       
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    .bar >*{
+      width: 30px;
+      height: 3px;
+      background-color: rgb(230, 230, 230);
+      margin: 8px 0;
+      transition: 0.2s;
+    }
+
+    .change .bar1 {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+    .container-fluid {
+      padding: 0;
+    }
+
+    .front {
+      background-image: radial-gradient(#0c0c0c, #151515);
+      place-items: center;
+    }
+
+    #front-img {
+      display: block;
+      object-fit: cover;
+      animation: fade 20s linear infinite;
+    }
+
+    #front-img,
+    #front-logo {
+      width: 100%;
+    }
+
+    /* Changing images */
+    @keyframes fade {
+      0% {
+        content: url("images/home-page-animation/ac-haier.png");
+        opacity: 1;
+      }
+
+      10% {
+        opacity: 0;
+      }
+
+      20% {
+        content: url("images/home-page-animation/ac-gree.png");
+        opacity: 1;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      40% {
+        content: url("images/home-page-animation/ac-dawlence.png");
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      60% {
+        content: url("images/home-page-animation/ac-kenwood.png");
+        opacity: 1;
+      }
+
+      70% {
+        opacity: 0;
+      }
+
+      80% {
+        content: url("images/home-page-animation/ac-mitsubishi.png");
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 0;
+      }
+
+      100% {
+        content: url("images/home-page-animation/ac-haier.png");
+        opacity: 1;
+      }
+    }
+
+    
+
+
+    #see-all {
+      height: 500px;
+      background-color: white;
+      background-image: url("images/see-all-back.png");
+      text-align: center;
+    }
+
+    #see-all-btn {
+      height: 100px;
+      width: 480px;
+      border: 4px solid #151515;
+      background-color: transparent;
+      border-radius: 50px;
+      font: 40px 'arial';
+      position: relative;
+      top: 12rem;
+      margin: auto;
+    }
+
+    #see-all-btn:focus {
+      outline: none;
+    }
+
+    #see-all-btn:hover {
+      background-color:#151515;
+      color: white;
+      font: 37px 'arial';
+      font-weight: bold;
+      
+      box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Custom ScrollBar */
+    /* width */
+    ::-webkit-scrollbar {
+    width: 12px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: black;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 255, 255); 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    #third {
+      background-color: #151515;
+      color: #ffffff;
+      height: auto;
+      padding-bottom: 10px;
+    }
+    #ourbrands {
+      text-align: center;  
+      padding-top: 150px;
+      padding-bottom: 50px;
+      font-size: 100px;
+      font-family: "Poiret One";
+      /* transform: rotate(-90deg); */
+    }
+    .diamond {
+      height: 250px;
+      width:250px;
+      border: 3px solid rgb(255, 255, 255);
+      transform: rotate(45deg);
+      margin: 59px auto;
+      transition: all .5s  ease-out;
+    }   
+    .diamond img {
+      position: relative;
+      transform: rotate(-45deg);
+      transition: all .5s  ease-out;
+    }
+    .d1 img {
+      top: 77px;
+      left: -3px;
+    }
+    .d1b {
+      background-color: pink;
+    }
+    .d2 img {
+      top: 95px;
+      left: -12px
+    }
+    .d2b {
+      background-color: rgb(255, 143, 249);
+    }
+    .d3 img {
+      top: 83px;
+      left: -30px;
+    }
+    .d3b {
+      background-color: rgb(188, 117, 255);
+    }
+    .d4 img {
+      top: 92px;
+      left: -11px;
+    }
+    .d4b {
+      background-color: rgb(157, 175, 255);
+    }
+    .d5 img {
+      top: 90px;
+      left: -15px;
+    }
+    .d5b {
+      background-color: rgb(101, 232, 255);
+    }
+    
+    .d img {
+      transform: scale(1.5) rotate(-45deg);
+    }
+    /* separates footer  */
+    .footer-line {
+      height: 2px;
+      width: 95%;
+      background: white;
+      margin: 100px auto -10px auto;
+
+    }
+    footer {
+      height: 70px;
+      background-color: #151515;
+      color: white;
+      text-align: center;
+    }
+    footer p {
+      position: relative;
+      top: 35%;
+    }
+    /* Some code to make the page responsive */
+    @media screen and (min-width: 1600px) {
+      .front {
+        height: 63em;
+      }
+  
+    }
+
+    @media screen and (min-width: 1300px) and (max-width: 1599px) {
+      .front {
+        height: 60em;
+      }
+
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1299px) {
+      .front {
+        height: 60em;
+      }
+
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1199px) {
+      .front {
+        height: 85em;
+      }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 999px) {
+      .front {
+        height: 73em;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+        }
+    }
+
+    @media screen and (min-width: 450px) and (max-width: 699px) {
+      .front {
+        height: 56em;
+      }
+      #see-all-btn {
+        transform: scale(0.7);
+      }
+      ::-webkit-scrollbar {
+        display: none;
+        }
+      #ourbrands {
+        font-size: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width: 449px) {
+      .front {
+        height: 40em;
+      }
+      #see-all-btn {
+        transform: scale(0.4);
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    /* For javascript to add this class to blur the desired element*/
+    .blur {
+      filter: blur(3px);
+    }

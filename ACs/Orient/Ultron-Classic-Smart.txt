@@ -1,0 +1,31 @@
+Key Features
+Factory installed Wi-Fi Kit
+Built-in Energy Meter
+Electricity Consumption Management
+Online Control
+Schedule Management
+50 Feet Long Air Throw
+60% Energy Savings
+Low Voltage Operations
+For All Weathers
+Japanese PCB
+Gold Fin - No Rust
+Specifications
+Rated Capacity (Cooling)
+3500(1500-3900) W
+Cooling - Rated Power Consumption
+1100(420-1560) W
+Cooling - Running Current
+4.8(2.0-6.8) A
+SEER - Cooling
+3.5
+Heating - Rated Capacity
+3500(1600-4000) W
+Heating - Rated Power Consumption
+1050(430-1600) W
+Heating - Running Current
+4.6(1.9-7.0) A
+Air Flow
+600 m3/h
+Sound Level
+44dB(A)
