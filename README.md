@@ -19,3 +19,7 @@ A website to browse different Air Conditioners and compare them efficiently.
 
 - ![JQuery](https://i.ibb.co/PQQPJgt/Jquery.png)  [JQuery] - Javascript enhanced for web apps!
 - ![Bootstrap](https://i.ibb.co/TczvvbK/Bootstrap.png)  [Bootstrap] - CSS Companion
+
+## License
+(CC0 1.0 Universal) You're free to use this game and code in any project, personal or commercial. There's no need to ask permission before using these. Giving attribution is not required, but appreciated.
+
