@@ -10,9 +10,10 @@ A website to browse different Air Conditioners and compare them efficiently.
 
 ## Features
     - AC Brands: Haier, Kenwood, Orient, Gree, Dawlance
-    - Brand-wise Filter
+    - Brand-Wise Filter
     - Beautiful UI
     - Specification Camparison
+    - Light-Weight and Fast Browsing
 
 ## Tech
 
